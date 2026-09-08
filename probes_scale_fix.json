@@ -1,0 +1,158 @@
+{
+ "probes": [
+  {
+   "id": "ocr_cn_0_fix",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "images": [
+    "fix_ocr_cn_0.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_1_fix",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "智能手表可以实时监测心率血压与睡眠质量",
+   "images": [
+    "fix_ocr_cn_1.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_9_fix",
+   "task": "ocr_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "gt": "sHBzTRQJzGvzkFpdCBFPQiqBmNxtwkcQepT59A25",
+   "images": [
+    "fix_ocr_en_9.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "maze_yes_fix",
+   "task": "maze",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "gt": "是",
+   "images": [
+    "fix_maze_yes.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "maze_no_fix",
+   "task": "maze",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "gt": "否",
+   "images": [
+    "fix_maze_no.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "maze_steps_fix",
+   "task": "maze",
+   "question": "图中是迷宫，绿色 S 是起点，红色 E 是终点。从 S 到 E 的最短路径一共经过多少个格子（把 S 和 E 都算入）？只输出数字。",
+   "gt": "55",
+   "images": [
+    "fix_maze_steps.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_13_fix",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "13",
+   "images": [
+    "fix_count_13.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_26_fix",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "26",
+   "images": [
+    "fix_count_26.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_77_fix",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "77",
+   "images": [
+    "fix_count_77.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_0_top_fix",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g017",
+   "images": [
+    "fix_crowd_chart_0_top.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_1_top_fix",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g101",
+   "images": [
+    "fix_crowd_chart_1_top.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_2_top_fix",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g202",
+   "images": [
+    "fix_crowd_chart_2_top.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_0_fix",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "alpha",
+   "images": [
+    "fix_symbol_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_4_fix",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "element-of",
+   "images": [
+    "fix_symbol_4.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  }
+ ]
+}

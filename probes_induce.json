@@ -1,0 +1,580 @@
+{
+ "probes": [
+  {
+   "id": "dense_red_only_A",
+   "base_id": "dense_red_only",
+   "task": "dense_count",
+   "arm": "A",
+   "question": "图中有多少个红色圆点？只输出数字。",
+   "images": [
+    "dense_red_only.png"
+   ],
+   "gt": "47",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_only_B",
+   "base_id": "dense_red_only",
+   "task": "dense_count",
+   "arm": "B",
+   "question": "图中有多少个红色圆点？只输出数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "dense_red_only.png"
+   ],
+   "gt": "47",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_only_C",
+   "base_id": "dense_red_only",
+   "task": "dense_count",
+   "arm": "C",
+   "question": "图中有多少个红色圆点？只输出数字。\n\n推理过程中，请先用 <｜ref｜>红色圆点<｜/ref｜><｜box｜>[[x1,y1,x2,y2]]<｜box｜> 逐个标注每一个红色圆点，确保不遗漏，然后再给出总数。\n注意：图片尺寸是 700×700 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "dense_red_only.png"
+   ],
+   "gt": "47",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub_A",
+   "base_id": "dense_red_sub",
+   "task": "dense_count",
+   "arm": "A",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。",
+   "images": [
+    "dense_red_sub.png"
+   ],
+   "gt": "23",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub_B",
+   "base_id": "dense_red_sub",
+   "task": "dense_count",
+   "arm": "B",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "dense_red_sub.png"
+   ],
+   "gt": "23",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub_C",
+   "base_id": "dense_red_sub",
+   "task": "dense_count",
+   "arm": "C",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。\n\n推理过程中，请先用 <｜ref｜>红色圆点<｜/ref｜><｜box｜>[[x1,y1,x2,y2]]<｜box｜> 逐个标注每一个红色圆点，确保不遗漏，然后再给出总数。\n注意：图片尺寸是 700×700 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "dense_red_sub.png"
+   ],
+   "gt": "23",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub2_A",
+   "base_id": "dense_red_sub2",
+   "task": "dense_count",
+   "arm": "A",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。",
+   "images": [
+    "dense_red_sub2.png"
+   ],
+   "gt": "35",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub2_B",
+   "base_id": "dense_red_sub2",
+   "task": "dense_count",
+   "arm": "B",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "dense_red_sub2.png"
+   ],
+   "gt": "35",
+   "score_type": "numeric"
+  },
+  {
+   "id": "dense_red_sub2_C",
+   "base_id": "dense_red_sub2",
+   "task": "dense_count",
+   "arm": "C",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。\n\n推理过程中，请先用 <｜ref｜>红色圆点<｜/ref｜><｜box｜>[[x1,y1,x2,y2]]<｜box｜> 逐个标注每一个红色圆点，确保不遗漏，然后再给出总数。\n注意：图片尺寸是 700×700 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "dense_red_sub2.png"
+   ],
+   "gt": "35",
+   "score_type": "numeric"
+  },
+  {
+   "id": "maze_yes_A",
+   "base_id": "maze_yes",
+   "task": "maze",
+   "arm": "A",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "images": [
+    "maze_yes.png"
+   ],
+   "gt": "是",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_yes_B",
+   "base_id": "maze_yes",
+   "task": "maze",
+   "arm": "B",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "maze_yes.png"
+   ],
+   "gt": "是",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_yes_C",
+   "base_id": "maze_yes",
+   "task": "maze",
+   "arm": "C",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。\n\n推理过程中，请像深度优先搜索一样探索迷宫，并用 <｜point｜>[[x,y]]<｜point｜> 逐一记录你当前所在格子的坐标，回溯到死路时也要记录。\n注意：图片尺寸是 287×287 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "maze_yes.png"
+   ],
+   "gt": "是",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_no_A",
+   "base_id": "maze_no",
+   "task": "maze",
+   "arm": "A",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "images": [
+    "maze_no.png"
+   ],
+   "gt": "否",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_no_B",
+   "base_id": "maze_no",
+   "task": "maze",
+   "arm": "B",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "maze_no.png"
+   ],
+   "gt": "否",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_no_C",
+   "base_id": "maze_no",
+   "task": "maze",
+   "arm": "C",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。\n\n推理过程中，请像深度优先搜索一样探索迷宫，并用 <｜point｜>[[x,y]]<｜point｜> 逐一记录你当前所在格子的坐标，回溯到死路时也要记录。\n注意：图片尺寸是 287×287 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "maze_no.png"
+   ],
+   "gt": "否",
+   "score_type": "exact"
+  },
+  {
+   "id": "maze_steps_A",
+   "base_id": "maze_steps",
+   "task": "maze",
+   "arm": "A",
+   "question": "图中是迷宫，绿色 S 是起点，红色 E 是终点。从 S 到 E 的最短路径一共经过多少个格子（把 S 和 E 都算入）？只输出数字。",
+   "images": [
+    "maze_steps.png"
+   ],
+   "gt": "55",
+   "score_type": "numeric"
+  },
+  {
+   "id": "maze_steps_B",
+   "base_id": "maze_steps",
+   "task": "maze",
+   "arm": "B",
+   "question": "图中是迷宫，绿色 S 是起点，红色 E 是终点。从 S 到 E 的最短路径一共经过多少个格子（把 S 和 E 都算入）？只输出数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "maze_steps.png"
+   ],
+   "gt": "55",
+   "score_type": "numeric"
+  },
+  {
+   "id": "maze_steps_C",
+   "base_id": "maze_steps",
+   "task": "maze",
+   "arm": "C",
+   "question": "图中是迷宫，绿色 S 是起点，红色 E 是终点。从 S 到 E 的最短路径一共经过多少个格子（把 S 和 E 都算入）？只输出数字。\n\n推理过程中，请像深度优先搜索一样探索迷宫，并用 <｜point｜>[[x,y]]<｜point｜> 逐一记录你当前所在格子的坐标，回溯到死路时也要记录。\n注意：图片尺寸是 287×287 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "maze_steps.png"
+   ],
+   "gt": "55",
+   "score_type": "numeric"
+  },
+  {
+   "id": "tangle_0_A",
+   "base_id": "tangle_0",
+   "task": "path_trace",
+   "arm": "A",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "images": [
+    "tangle_0.png"
+   ],
+   "gt": "A->2, B->3, C->1",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_0_B",
+   "base_id": "tangle_0",
+   "task": "path_trace",
+   "arm": "B",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "tangle_0.png"
+   ],
+   "gt": "A->2, B->3, C->1",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_0_C",
+   "base_id": "tangle_0",
+   "task": "path_trace",
+   "arm": "C",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n推理过程中，请沿着曲线用 <｜point｜>[[x,y]]<｜point｜> 逐步记录路径上的关键点，注意在交叉处按连续性判断延续。\n注意：图片尺寸是 700×260 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "tangle_0.png"
+   ],
+   "gt": "A->2, B->3, C->1",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_1_A",
+   "base_id": "tangle_1",
+   "task": "path_trace",
+   "arm": "A",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "images": [
+    "tangle_1.png"
+   ],
+   "gt": "A->3, B->1, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_1_B",
+   "base_id": "tangle_1",
+   "task": "path_trace",
+   "arm": "B",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "tangle_1.png"
+   ],
+   "gt": "A->3, B->1, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_1_C",
+   "base_id": "tangle_1",
+   "task": "path_trace",
+   "arm": "C",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n推理过程中，请沿着曲线用 <｜point｜>[[x,y]]<｜point｜> 逐步记录路径上的关键点，注意在交叉处按连续性判断延续。\n注意：图片尺寸是 700×260 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "tangle_1.png"
+   ],
+   "gt": "A->3, B->1, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_2_A",
+   "base_id": "tangle_2",
+   "task": "path_trace",
+   "arm": "A",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "images": [
+    "tangle_2.png"
+   ],
+   "gt": "A->1, B->3, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_2_B",
+   "base_id": "tangle_2",
+   "task": "path_trace",
+   "arm": "B",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "tangle_2.png"
+   ],
+   "gt": "A->1, B->3, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "tangle_2_C",
+   "base_id": "tangle_2",
+   "task": "path_trace",
+   "arm": "C",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。\n\n推理过程中，请沿着曲线用 <｜point｜>[[x,y]]<｜point｜> 逐步记录路径上的关键点，注意在交叉处按连续性判断延续。\n注意：图片尺寸是 700×260 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "tangle_2.png"
+   ],
+   "gt": "A->1, B->3, C->2",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_0_A",
+   "base_id": "spatial_hop_0",
+   "task": "spatial_hop",
+   "arm": "A",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "images": [
+    "spatial_hop_0.png"
+   ],
+   "gt": "右下",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_0_B",
+   "base_id": "spatial_hop_0",
+   "task": "spatial_hop",
+   "arm": "B",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "spatial_hop_0.png"
+   ],
+   "gt": "右下",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_0_C",
+   "base_id": "spatial_hop_0",
+   "task": "spatial_hop",
+   "arm": "C",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注 A、B、C 图形的位置以辅助推理。\n注意：图片尺寸是 560×340 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "spatial_hop_0.png"
+   ],
+   "gt": "右下",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_4_A",
+   "base_id": "spatial_hop_4",
+   "task": "spatial_hop",
+   "arm": "A",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "images": [
+    "spatial_hop_4.png"
+   ],
+   "gt": "左上",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_4_B",
+   "base_id": "spatial_hop_4",
+   "task": "spatial_hop",
+   "arm": "B",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "spatial_hop_4.png"
+   ],
+   "gt": "左上",
+   "score_type": "exact"
+  },
+  {
+   "id": "spatial_hop_4_C",
+   "base_id": "spatial_hop_4",
+   "task": "spatial_hop",
+   "arm": "C",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注 A、B、C 图形的位置以辅助推理。\n注意：图片尺寸是 560×340 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "spatial_hop_4.png"
+   ],
+   "gt": "左上",
+   "score_type": "exact"
+  },
+  {
+   "id": "arc_recolor_A",
+   "base_id": "arc_recolor",
+   "task": "arc_grid",
+   "arm": "A",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "images": [
+    "arc_recolor.png"
+   ],
+   "gt": "KKYYYKKKYYYKKYYYYYYYKKYKYYYYKKYKYYYK",
+   "score_type": "grid"
+  },
+  {
+   "id": "arc_recolor_B",
+   "base_id": "arc_recolor",
+   "task": "arc_grid",
+   "arm": "B",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "arc_recolor.png"
+   ],
+   "gt": "KKYYYKKKYYYKKYYYYYYYKKYKYYYYKKYKYYYK",
+   "score_type": "grid"
+  },
+  {
+   "id": "arc_recolor_C",
+   "base_id": "arc_recolor",
+   "task": "arc_grid",
+   "arm": "C",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注示例网格与测试网格的位置，再推导变换规则。\n注意：图片尺寸是 452×528 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "arc_recolor.png"
+   ],
+   "gt": "KKYYYKKKYYYKKYYYYYYYKKYKYYYYKKYKYYYK",
+   "score_type": "grid"
+  },
+  {
+   "id": "arc_mirror_A",
+   "base_id": "arc_mirror",
+   "task": "arc_grid",
+   "arm": "A",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "images": [
+    "arc_mirror.png"
+   ],
+   "gt": "YYYYYYYKKYKYYYKYYYKYKKYYYYYKYYYKKKYY",
+   "score_type": "grid"
+  },
+  {
+   "id": "arc_mirror_B",
+   "base_id": "arc_mirror",
+   "task": "arc_grid",
+   "arm": "B",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "arc_mirror.png"
+   ],
+   "gt": "YYYYYYYKKYKYYYKYYYKYKKYYYYYKYYYKKKYY",
+   "score_type": "grid"
+  },
+  {
+   "id": "arc_mirror_C",
+   "base_id": "arc_mirror",
+   "task": "arc_grid",
+   "arm": "C",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注示例网格与测试网格的位置，再推导变换规则。\n注意：图片尺寸是 452×528 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "arc_mirror.png"
+   ],
+   "gt": "YYYYYYYKKYKYYYKYYYKYKKYYYYYKYYYKKKYY",
+   "score_type": "grid"
+  },
+  {
+   "id": "ocr_cn_0_A",
+   "base_id": "ocr_cn_0",
+   "task": "ocr_cn",
+   "arm": "A",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "images": [
+    "ocr_cn_0.png"
+   ],
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "ocr_cn_0_B",
+   "base_id": "ocr_cn_0",
+   "task": "ocr_cn",
+   "arm": "B",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "ocr_cn_0.png"
+   ],
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "ocr_cn_0_C",
+   "base_id": "ocr_cn_0",
+   "task": "ocr_cn",
+   "arm": "C",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注文字所在区域。\n注意：图片尺寸是 1900×64 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "ocr_cn_0.png"
+   ],
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "ocr_en_9_A",
+   "base_id": "ocr_en_9",
+   "task": "ocr_en",
+   "arm": "A",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "images": [
+    "ocr_en_9.png"
+   ],
+   "gt": "sHBzTRQJzGvzkFpdCBFPQiqBmNxtwkcQepT59A25",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "ocr_en_9_B",
+   "base_id": "ocr_en_9",
+   "task": "ocr_en",
+   "arm": "B",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "ocr_en_9.png"
+   ],
+   "gt": "sHBzTRQJzGvzkFpdCBFPQiqBmNxtwkcQepT59A25",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "ocr_en_9_C",
+   "base_id": "ocr_en_9",
+   "task": "ocr_en",
+   "arm": "C",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注文字所在区域。\n注意：图片尺寸是 1900×64 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "ocr_en_9.png"
+   ],
+   "gt": "sHBzTRQJzGvzkFpdCBFPQiqBmNxtwkcQepT59A25",
+   "score_type": "char_acc"
+  },
+  {
+   "id": "crowd_chart_0_top_A",
+   "base_id": "crowd_chart_0_top",
+   "task": "crowd_chart",
+   "arm": "A",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "gt": "g017",
+   "score_type": "exact"
+  },
+  {
+   "id": "crowd_chart_0_top_B",
+   "base_id": "crowd_chart_0_top",
+   "task": "crowd_chart",
+   "arm": "B",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。\n\n请先仔细观察图片，分步骤分析后，再给出最终答案。",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "gt": "g017",
+   "score_type": "exact"
+  },
+  {
+   "id": "crowd_chart_0_top_C",
+   "base_id": "crowd_chart_0_top",
+   "task": "crowd_chart",
+   "arm": "C",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。\n\n推理过程中，请先用 <｜box｜>[[x1,y1,x2,y2]]<｜box｜> 标注你认为数值最高的那根柱子。\n注意：图片尺寸是 1500×504 像素。最后一行请单独输出：ANSWER: <最终答案>",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "gt": "g017",
+   "score_type": "exact"
+  }
+ ]
+}
