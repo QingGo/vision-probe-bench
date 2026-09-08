@@ -1,0 +1,678 @@
+{
+ "probes": [
+  {
+   "id": "ocr_en_9",
+   "task": "ocr_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "gt": "sHBzTRQJzGvzkFpdCBFPQiqBmNxtwkcQepT59A25",
+   "images": [
+    "ocr_en_9.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_12",
+   "task": "ocr_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "gt": "LwdXTKP2XGFaGY8YqS5CyfkHaFmU7sr9ZnNxECuQ",
+   "images": [
+    "ocr_en_12.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_11",
+   "task": "ocr_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "gt": "The quick brown fox jumps over the lazy dog and flies away",
+   "images": [
+    "ocr_en_11.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_15",
+   "task": "ocr_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身，不要加引号或解释。",
+   "gt": "The quick brown fox jumps over the lazy dog and flies away",
+   "images": [
+    "ocr_en_15.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_0",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "images": [
+    "ocr_cn_0.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_1",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "智能手表可以实时监测心率血压与睡眠质量",
+   "images": [
+    "ocr_cn_1.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_2",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "她把行李箱放在候车室的座位上，然后去买票",
+   "images": [
+    "ocr_cn_2.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_3",
+   "task": "ocr_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "工程师正在调试新交付的生产线，注意安全",
+   "images": [
+    "ocr_cn_3.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "scene_cn_0",
+   "task": "scene_cn",
+   "question": "请识别图片中的白色文字并转录，只输出文字本身。",
+   "gt": "奶茶店今日买一送一",
+   "images": [
+    "scene_cn_0.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "scene_cn_1",
+   "task": "scene_cn",
+   "question": "请识别图片中的白色文字并转录，只输出文字本身。",
+   "gt": "扫码支付立减五元",
+   "images": [
+    "scene_cn_1.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "scene_cn_2",
+   "task": "scene_cn",
+   "question": "请识别图片中的白色文字并转录，只输出文字本身。",
+   "gt": "地铁站出口向左转",
+   "images": [
+    "scene_cn_2.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_0_0",
+   "task": "dense_table",
+   "question": "图中表格第 3 行、第 C 列（左起第 3 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "51.11",
+   "images": [
+    "dense_table_0.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_0_1",
+   "task": "dense_table",
+   "question": "图中表格第 6 行、第 E 列（左起第 5 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "51.17",
+   "images": [
+    "dense_table_0.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_0_2",
+   "task": "dense_table",
+   "question": "图中表格第 8 行、第 B 列（左起第 2 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "37.24",
+   "images": [
+    "dense_table_0.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_1_0",
+   "task": "dense_table",
+   "question": "图中表格第 3 行、第 C 列（左起第 3 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "90.38",
+   "images": [
+    "dense_table_1.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_1_1",
+   "task": "dense_table",
+   "question": "图中表格第 6 行、第 E 列（左起第 5 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "34.64",
+   "images": [
+    "dense_table_1.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_1_2",
+   "task": "dense_table",
+   "question": "图中表格第 8 行、第 B 列（左起第 2 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "19.40",
+   "images": [
+    "dense_table_1.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_2_0",
+   "task": "dense_table",
+   "question": "图中表格第 3 行、第 C 列（左起第 3 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "56.14",
+   "images": [
+    "dense_table_2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_2_1",
+   "task": "dense_table",
+   "question": "图中表格第 6 行、第 E 列（左起第 5 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "68.28",
+   "images": [
+    "dense_table_2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_table_2_2",
+   "task": "dense_table",
+   "question": "图中表格第 8 行、第 B 列（左起第 2 列，行号从 1 开始，列字母 A 起）的数值是多少？只输出数字。",
+   "gt": "97.92",
+   "images": [
+    "dense_table_2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_0_top",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g017",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_0_val",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签为 g010 的那根柱子，数值是多少？只输出整数。",
+   "gt": "46",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_1_top",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g101",
+   "images": [
+    "crowd_chart_1.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_1_val",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签为 g110 的那根柱子，数值是多少？只输出整数。",
+   "gt": "63",
+   "images": [
+    "crowd_chart_1.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_2_top",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签是 g 开头的编号（例如 g000）。数值最高的类别标签是什么？只输出该标签（如 g000）。",
+   "gt": "g202",
+   "images": [
+    "crowd_chart_2.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_2_val",
+   "task": "crowd_chart",
+   "question": "图中 x 轴标签为 g210 的那根柱子，数值是多少？只输出整数。",
+   "gt": "68",
+   "images": [
+    "crowd_chart_2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_13",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "13",
+   "images": [
+    "count_13.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_19",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "19",
+   "images": [
+    "count_19.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_26",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "26",
+   "images": [
+    "count_26.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_31",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "31",
+   "images": [
+    "count_31.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_42",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "42",
+   "images": [
+    "count_42.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_55",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "55",
+   "images": [
+    "count_55.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_64",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "64",
+   "images": [
+    "count_64.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "count_77",
+   "task": "counting",
+   "question": "图中有多少个彩色圆点？只输出数字。",
+   "gt": "77",
+   "images": [
+    "count_77.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "spatial_0",
+   "task": "spatial",
+   "question": "图中是一个 3×3 网格。请回答：红色方块在第几行第几列？（行、列都从 1 开始数，用“行,列”格式回答，如 2,3）",
+   "gt": "2,1",
+   "images": [
+    "spatial_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_1",
+   "task": "spatial",
+   "question": "图中是一个 3×3 网格。请回答：红色方块在第几行第几列？（行、列都从 1 开始数，用“行,列”格式回答，如 2,3）",
+   "gt": "3,3",
+   "images": [
+    "spatial_1.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_2",
+   "task": "spatial",
+   "question": "图中是一个 3×3 网格。请回答：红色方块在第几行第几列？（行、列都从 1 开始数，用“行,列”格式回答，如 2,3）",
+   "gt": "1,2",
+   "images": [
+    "spatial_2.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_3",
+   "task": "spatial",
+   "question": "图中是一个 3×3 网格。请回答：红色方块在第几行第几列？（行、列都从 1 开始数，用“行,列”格式回答，如 2,3）",
+   "gt": "2,2",
+   "images": [
+    "spatial_3.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_4",
+   "task": "spatial",
+   "question": "图中是一个 3×3 网格。请回答：红色方块在第几行第几列？（行、列都从 1 开始数，用“行,列”格式回答，如 2,3）",
+   "gt": "3,1",
+   "images": [
+    "spatial_4.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "multi_same",
+   "task": "multi_image",
+   "question": "请比较这两张图片。两张图是否完全相同？只回答“相同”或“不同”。",
+   "gt": "相同",
+   "images": [
+    "multi_same_a.png",
+    "multi_same_b.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "multi_diff_cnt",
+   "task": "multi_image",
+   "question": "请比较这两张图片。两张图是否完全相同？如果不同，两图中红色圆点的数量分别是什么？回答格式：相同或不同, 左图数量, 右图数量（如：不同, 14, 15）",
+   "gt": "不同, 14, 15",
+   "images": [
+    "multi_cnt_a.png",
+    "multi_cnt_b.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "multi_diff_color",
+   "task": "multi_image",
+   "question": "请比较这两张图片。两张图是否完全相同？只回答“相同”或“不同”。",
+   "gt": "不同",
+   "images": [
+    "multi_col_a.png",
+    "multi_col_b.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "math_0",
+   "task": "math_img",
+   "question": "请解答图中的问题，只输出最终数值答案（整数）。",
+   "gt": "5",
+   "images": [
+    "math_0.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "math_1",
+   "task": "math_img",
+   "question": "请解答图中的问题，只输出最终数值答案（整数）。",
+   "gt": "55",
+   "images": [
+    "math_1.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "math_2",
+   "task": "math_img",
+   "question": "请解答图中的问题，只输出最终数值答案（整数）。",
+   "gt": "41",
+   "images": [
+    "math_2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "math_3",
+   "task": "math_img",
+   "question": "请解答图中的问题，只输出最终数值答案（整数）。",
+   "gt": "36",
+   "images": [
+    "math_3.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "symbol_0",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "alpha",
+   "images": [
+    "symbol_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_1",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "beta",
+   "images": [
+    "symbol_1.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_2",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "partial",
+   "images": [
+    "symbol_2.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_3",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "nabla",
+   "images": [
+    "symbol_3.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_4",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "element-of",
+   "images": [
+    "symbol_4.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_5",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "not-element-of",
+   "images": [
+    "symbol_5.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_6",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "subset-of",
+   "images": [
+    "symbol_6.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_7",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "union",
+   "images": [
+    "symbol_7.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "symbol_8",
+   "task": "fine_symbol",
+   "question": "图片中央显示的是哪个数学符号？从以下选项中选择并只输出英文名：alpha、beta、partial、nabla、element-of、not-element-of、subset-of、union、intersection、sum、sqrt",
+   "gt": "intersection",
+   "images": [
+    "symbol_8.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_12_full",
+   "task": "res_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身。",
+   "gt": "3v8K2mQ9xT4zP6nL1rA5cJ7bH9dF2eG8wS3uY",
+   "images": [
+    "ocr_en_12.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_en_12_ds700",
+   "task": "res_en",
+   "question": "请逐字转录图片中的全部文字，只输出文字本身。",
+   "gt": "3v8K2mQ9xT4zP6nL1rA5cJ7bH9dF2eG8wS3uY",
+   "images": [
+    "ocr_en_12_ds700.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_0_full",
+   "task": "res_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "images": [
+    "ocr_cn_0.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "ocr_cn_0_ds700",
+   "task": "res_cn",
+   "question": "请逐字转录图片中的全部中文文字，只输出文字本身。",
+   "gt": "北方的冬天格外寒冷，清晨的湖面结满厚冰",
+   "images": [
+    "ocr_cn_0_ds700.png"
+   ],
+   "score_type": "char_acc",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_0_full",
+   "task": "res_chart",
+   "question": "图中 x 轴标签是 g 开头的编号。数值最高的类别标签是什么？只输出该标签。",
+   "gt": "g017",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "crowd_chart_0_ds700",
+   "task": "res_chart",
+   "question": "图中 x 轴标签是 g 开头的编号。数值最高的类别标签是什么？只输出该标签。",
+   "gt": "g017",
+   "images": [
+    "crowd_chart_0_ds700.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  }
+ ]
+}

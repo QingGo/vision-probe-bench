@@ -1,0 +1,92 @@
+{
+ "probes": [
+  {
+   "id": "ui_click_0",
+   "task": "ui_click",
+   "question": "用户想导出报表数据。请读取面板上的按钮文字，调用 click 点击正确的按钮，最后输出你点击的按钮文字。",
+   "gt": "导出",
+   "images": [
+    "ui_click_0.png"
+   ],
+   "toolset": "ui_click",
+   "score_type": "exact"
+  },
+  {
+   "id": "ui_click_1",
+   "task": "ui_click",
+   "question": "用户同意服务协议。请读取面板上的按钮文字，调用 click 点击正确的按钮，最后输出你点击的按钮文字。",
+   "gt": "同意",
+   "images": [
+    "ui_click_1.png"
+   ],
+   "toolset": "ui_click",
+   "score_type": "exact"
+  },
+  {
+   "id": "form_0",
+   "task": "form_submit",
+   "question": "图中是一张信息登记表。请读取表单中姓名、电话、邮箱三个字段的值，调用 submit 工具提交，字段顺序为 (name, phone, email)。最后输出你提交的值。",
+   "gt": "李小明|13812345678|xiaoming@mail.com",
+   "images": [
+    "form_0.png"
+   ],
+   "toolset": "form_submit",
+   "score_type": "form_args"
+  },
+  {
+   "id": "form_1",
+   "task": "form_submit",
+   "question": "图中是一张信息登记表。请读取表单中姓名、电话、邮箱三个字段的值，调用 submit 工具提交，字段顺序为 (name, phone, email)。最后输出你提交的值。",
+   "gt": "王芳|15900001111|wangfang@test.cn",
+   "images": [
+    "form_1.png"
+   ],
+   "toolset": "form_submit",
+   "score_type": "form_args"
+  },
+  {
+   "id": "chart_lookup_0",
+   "task": "chart_lookup",
+   "question": "图中是柱状图，x 轴标签为 g 开头的编号（如 g000）。x 轴标签较小，请先用 get_value 工具查询若干候选类别的精确数值，再回答：数值最高的类别标签是什么？最后只输出该标签。",
+   "gt": "g017",
+   "images": [
+    "crowd_chart_0.png"
+   ],
+   "toolset": "chart_lookup",
+   "score_type": "exact"
+  },
+  {
+   "id": "chart_lookup_1",
+   "task": "chart_lookup",
+   "question": "图中是柱状图，x 轴标签为 g 开头的编号（如 g000）。x 轴标签较小，请先用 get_value 工具查询若干候选类别的精确数值，再回答：数值最高的类别标签是什么？最后只输出该标签。",
+   "gt": "g101",
+   "images": [
+    "crowd_chart_1.png"
+   ],
+   "toolset": "chart_lookup",
+   "score_type": "exact"
+  },
+  {
+   "id": "chart_lookup_2",
+   "task": "chart_lookup",
+   "question": "图中是柱状图，x 轴标签为 g 开头的编号（如 g000）。x 轴标签较小，请先用 get_value 工具查询若干候选类别的精确数值，再回答：数值最高的类别标签是什么？最后只输出该标签。",
+   "gt": "g202",
+   "images": [
+    "crowd_chart_2.png"
+   ],
+   "toolset": "chart_lookup",
+   "score_type": "exact"
+  },
+  {
+   "id": "verify_0",
+   "task": "verify",
+   "question": "图中是一个操作面板。请数一数面板上有几个按钮。先用 verify 工具提交你的答案，若返回 wrong 说明数错了，请重新看图再试，直到返回 correct。最后输出数量。",
+   "gt": "5",
+   "images": [
+    "ui_click_0.png"
+   ],
+   "toolset": "verify",
+   "score_type": "numeric"
+  }
+ ]
+}

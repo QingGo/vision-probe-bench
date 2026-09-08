@@ -1,0 +1,224 @@
+{
+ "probes": [
+  {
+   "id": "maze_yes",
+   "task": "maze",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "gt": "是",
+   "images": [
+    "maze_yes.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "maze_no",
+   "task": "maze",
+   "question": "图中是迷宫，绿色圆点 S 是起点，红色圆点 E 是终点。从 S 能否走到 E？只回答“是”或“否”。",
+   "gt": "否",
+   "images": [
+    "maze_no.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "maze_steps",
+   "task": "maze",
+   "question": "图中是迷宫，绿色 S 是起点，红色 E 是终点。从 S 到 E 的最短路径一共经过多少个格子（把 S 和 E 都算入）？只输出数字。",
+   "gt": "55",
+   "images": [
+    "maze_steps.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "tangle_0",
+   "task": "path_trace",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "gt": "A->2, B->3, C->1",
+   "images": [
+    "tangle_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "tangle_1",
+   "task": "path_trace",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "gt": "A->3, B->1, C->2",
+   "images": [
+    "tangle_1.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "tangle_2",
+   "task": "path_trace",
+   "question": "图中的三条曲线颜色完全相同、会互相交叉。左侧端点标记为 A、B、C，右侧端点标记为 1、2、3。请沿曲线追踪，确定 A、B、C 各自连到右侧的哪个端点。回答格式：A->数字, B->数字, C->数字。",
+   "gt": "A->1, B->3, C->2",
+   "images": [
+    "tangle_2.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_hop_0",
+   "task": "spatial_hop",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "gt": "右下",
+   "images": [
+    "spatial_hop_0.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_hop_1",
+   "task": "spatial_hop",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "gt": "左下",
+   "images": [
+    "spatial_hop_1.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_hop_2",
+   "task": "spatial_hop",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "gt": "右上",
+   "images": [
+    "spatial_hop_2.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_hop_3",
+   "task": "spatial_hop",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "gt": "右下",
+   "images": [
+    "spatial_hop_3.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "spatial_hop_4",
+   "task": "spatial_hop",
+   "question": "图中有两个小图。左图用箭头表示 A 和 B 的位置关系（箭头从 A 指向 B 所在方向）；右图用箭头表示 B 和 C 的位置关系。请综合这两个关系，推断 C 相对于 A 在哪个方向？只输出一个方位词（上/下/左/右/左上/左下/右上/右下）。",
+   "gt": "左上",
+   "images": [
+    "spatial_hop_4.png"
+   ],
+   "score_type": "exact",
+   "extra": {}
+  },
+  {
+   "id": "dense_red_only",
+   "task": "dense_count",
+   "question": "图中有多少个红色圆点？只输出数字。",
+   "gt": "47",
+   "images": [
+    "dense_red_only.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_red_sub",
+   "task": "dense_count",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。",
+   "gt": "23",
+   "images": [
+    "dense_red_sub.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "dense_red_sub2",
+   "task": "dense_count",
+   "question": "图中有三种颜色的圆点。其中红色圆点有多少个？只输出数字。",
+   "gt": "35",
+   "images": [
+    "dense_red_sub2.png"
+   ],
+   "score_type": "numeric",
+   "extra": {}
+  },
+  {
+   "id": "arc_recolor",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "KKYYYKKKYYYKKYYYYYYYKKYKYYYYKKYKYYYK",
+   "images": [
+    "arc_recolor.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  },
+  {
+   "id": "arc_mirror",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "YYYYYYYKKYKYYYKYYYKYKKYYYYYKYYYKKKYY",
+   "images": [
+    "arc_mirror.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  },
+  {
+   "id": "arc_rot",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "OOOKKOKKKKKOKOKKKKKOOKKOKOOOKOOOOKOO",
+   "images": [
+    "arc_rot.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  },
+  {
+   "id": "arc_outline",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "KKKKRKKKKKKRKKKKKKKKKKKKKKKKKKRRKKRR",
+   "images": [
+    "arc_outline.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  },
+  {
+   "id": "arc_fill",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "KKKKKKKKBBBKKKBBBKKKBBBKKKKKKKKKKKKK",
+   "images": [
+    "arc_fill.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  },
+  {
+   "id": "arc_mirror2",
+   "task": "arc_grid",
+   "question": "图中包含同一个变换规则的两个示例（输入→输出）和一个测试输入网格。颜色字母：K=黑 R=红 G=绿 B=蓝 Y=黄 P=紫 O=橙。请推断规则，并给出测试输入对应的输出网格，按行输出字母，行之间用换行分隔，不要输出其它内容。",
+   "gt": "KKKBKKKBKBKBBBKBKKKBKKBBBKBKBKKBKBKK",
+   "images": [
+    "arc_mirror2.png"
+   ],
+   "score_type": "grid",
+   "extra": {}
+  }
+ ]
+}
